@@ -1,0 +1,158 @@
+@import "../../styles/globalVariables/variables";
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== Responsive Root Font size ======= */
+html {
+  font-size: 16px; // Large Desktop
+  line-height: 1.8;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px; // Desktop
+    line-height: 1.7;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; // Tablet
+    line-height: 1.6;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 12px; // Mobile
+    line-height: 1.5;
+  }
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+  .check-box-nav {
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 379px) {
+  .navbar-brand {
+    font-size: 0.9rem !important;
+  }
+}
+
+#app-section {
+  .underline {
+    height: 3px;
+    background-color: rgba($color: $accent-color, $alpha: 0.7);
+    margin: 10px auto 0;
+  }
+  #contact-section {
+    .underline {
+      width: 10%;
+    }
+    .card {
+      background-color: rgb(160, 160, 155);
+      color: rgb(246, 245, 241);
+    }
+  }
+  // #about-section {
+
+  // }
+  #donation-section {
+    .underline {
+      width: 25%;
+    }
+  }
+  #story-section {
+    .underline {
+      width: 25%;
+    }
+  }
+  #landing-section {
+    .underline {
+      width: 5%;
+    }
+    #events-section {
+      .events-body-section {
+        .card {
+          color: #6d1b1b !important;
+          background-color: #faf3e0;
+          box-shadow: 5px 10px 15px gray;
+          img {
+            height: 200px;
+          }
+        }
+      }
+    }
+    #address-container {
+      .direction-btn {
+        background-color: #d84315;
+        border: 6px solid #d84315;
+        border-radius: 8px;
+        color: #fff;
+      }
+    }
+  }
+}
+//// MAin Content ////
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+.col-with-modal {
+  background-color: #ffc264;
+}
+.heading-title-section {
+  font-family: $major-font;
+
+  .underline {
+    width: 5%;
+    height: 3px;
+    background-color: rgba($color: $accent-color, $alpha: 0.7);
+    margin: 8px auto 0;
+  }
+}
+.common-button {
+  color: #fff !important;
+  background-color: $button-color !important;
+  border-color: $button-color !important;
+  font-size: 1.2rem !important;
+  box-shadow: 5px 10px 20px rgb(238, 201, 201) !important;
+  &:focus,
+  &:hover {
+    background-color: rgba($color: $button-color, $alpha: 0.9) !important;
+  }
+  &:active {
+    background-color: #1c581e !important;
+  }
+}
+
+/// sticky button
+.sticky-right-btn {
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: fixed;
+  bottom: 6%;
+  right: 4%;
+  z-index: 1050; // above most elements (navbar, etc.)
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  border: 1px solid $primary-color;
+  background-color: $primary-color;
+  color: #fff;
+  box-shadow: 0 8px 12px rgba(243, 4, 4, 0.2);
+  // Optional hover effect
+  &:hover {
+    box-shadow: 0 8px 12px rgba($color: #c76a6a, $alpha: 0.8);
+  }
+
+  // Responsive visibility (optional)
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    padding: 0.6rem 1rem;
+  }
+}

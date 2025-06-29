@@ -1,0 +1,13 @@
+@import "../styles/globalVariables/variables";
+
+footer {
+  background-color: $bg-dark-variant;
+  color: $accent-color;
+  li {
+    margin: 1rem 0;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(76, 24, 24);
+  }
+}

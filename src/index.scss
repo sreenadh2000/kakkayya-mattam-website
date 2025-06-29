@@ -1,0 +1,17 @@
+@import "./components/styles/globalVariables/variables";
+// :root {
+//   --primary : #D84315;
+//   --secondary : #fff8e1;
+//   --acent : #6D1b1b;
+//   --background: #faf3e0;
+//   --button: #4caf50;
+// }
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: $minor-font !important;
+  color: $accent-color !important;
+  background-color: $background-color !important;
+}

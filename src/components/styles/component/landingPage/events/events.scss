@@ -1,0 +1,15 @@
+@import "../../../globalVariables/variables";
+
+#events-container {
+  background-color: #efe3c1;
+  .heading-section {
+    font-family: $major-font;
+
+    .underline {
+      width: 5%;
+      height: 3px;
+      background-color: rgba($color: $accent-color, $alpha: 0.7);
+      margin: 8px auto 0;
+    }
+  }
+}
