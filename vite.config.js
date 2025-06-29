@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/kakkayya-mattam-app/",
+  base: "/kakkayya-mattam-website/",
 });

@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
 import "./components/styles/component/main.scss";
 import { Suspense } from "react";
 import routes from "./components/Routing/Routes";
@@ -9,7 +14,7 @@ import { Trans, useTranslation } from "react-i18next";
 function App() {
   const { i18n } = useTranslation();
   return (
-    <Router>
+    <BrowserRouter basename="kakkayya-mattam-website">
       <div className="d-flex flex-column min-vh-100" id="app-section">
         <NavBar />
         <main className="flex-grow-1">
@@ -28,7 +33,7 @@ function App() {
           <Trans i18nKey={"fixedBtn"} /> <span>&rarr;</span>
         </a>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
