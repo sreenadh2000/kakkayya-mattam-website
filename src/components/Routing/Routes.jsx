@@ -44,7 +44,6 @@ export const navRoutes = [
   { path: "/", element: <LandingPage />, name: "nav.home" },
   { path: "/about", element: <About />, name: "nav.about" },
   { path: "/contact", element: <Contact />, name: "nav.contact" },
-  // { path: "/information", element: <Information />, name: "Information" },
   { path: "/donation", element: <Donation />, name: "nav.donation" },
 ];
 
