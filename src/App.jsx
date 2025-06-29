@@ -5,7 +5,7 @@ import routes from "./components/Routing/Routes";
 import NavBar from "./components/Navbar/NavBar";
 import { Footer } from "./components/Footer/Footer";
 import { Trans, useTranslation } from "react-i18next";
-// APIKEY = AIzaSyD91apDWH2wUHwN4QFTeCEBDq5ECB2-OGU
+
 function App() {
   const { i18n } = useTranslation();
   return (
